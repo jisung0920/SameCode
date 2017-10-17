@@ -20,8 +20,6 @@ public class cookActivity extends AppCompatActivity {
         intent = new Intent(this,contextActivity.class);
         switch (v.getId()){
             case R.id.backBtn:
-                intent = new Intent(this,MainActivity.class);
-                startActivity(intent);
                 finish();
                 break;
             case R.id.item1:

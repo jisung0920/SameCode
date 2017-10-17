@@ -17,7 +17,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".Code_ListActivity" />
-        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".travelActivity" />
+        <activity android:name=".musicActivity" />
+        <activity android:name=".dateActivity" />
+        <activity android:name=".cookActivity" />
+        <activity android:name=".bookActivity" />
+        <activity android:name=".movieActivity"></activity>
     </application>
 
 </manifest>

@@ -5,45 +5,127 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.jisung.samecode.MainActivity">
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/back"
+                android:background="@drawable/main"
                 android:layout_width="match_parent"
-                android:layout_height="800dp"
-                android:background="@drawable/test" />
+                android:layout_height="match_parent"/>
             <!--이미지에 맞춰 높이 조절-->
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:weightSum="5">
+                android:weightSum="100">
+
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:id="@+id/menu"
+                    android:background="#00000000"
+                    android:onClick="onClick"/>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="2" />
+                    android:layout_weight="53"/>
 
-                <Button
-                    android:layout_width="100dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="2"
-                    android:background="#00000000"
-                    android:onClick="onClick"
-                    android:text="bye" />
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_weight="18">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"/>
+                    <Button
+                        android:id="@+id/travel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="28"
+                        android:background="#00000000"
+                        android:onClick="onClick" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"/>
+                    <Button
+                        android:id="@+id/music"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="28"
+                        android:background="#00000000"
+                        android:onClick="onClick"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"/>
+                    <Button
+                        android:id="@+id/date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="28"
+                        android:background="#00000000"
+                        android:onClick="onClick"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_weight="18">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"/>
+                    <Button
+                        android:id="@+id/cook"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="28"
+                        android:background="#00000000"
+                        android:onClick="onClick" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"/>
+                    <Button
+                        android:id="@+id/book"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="28"
+                        android:background="#00000000"
+                        android:onClick="onClick"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"/>
+                    <Button
+                        android:id="@+id/movie"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="28"
+                        android:background="#00000000"
+                        android:onClick="onClick"/>
+                </LinearLayout>
+
+
                 <!--전체 이미지에 맞춰 버튼 위치 설정-->
             </LinearLayout>
 
         </FrameLayout>
 
 
-    </ScrollView>
 
 
 </LinearLayout>

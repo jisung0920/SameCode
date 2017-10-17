@@ -23,7 +23,8 @@
         <activity android:name=".dateActivity" />
         <activity android:name=".cookActivity" />
         <activity android:name=".bookActivity" />
-        <activity android:name=".movieActivity"></activity>
+        <activity android:name=".movieActivity" />
+        <activity android:name=".contextActivity"></activity>
     </application>
 
 </manifest>

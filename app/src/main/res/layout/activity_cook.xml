@@ -10,7 +10,7 @@
 <FrameLayout
     android:layout_width="match_parent"
     android:layout_height="0dp"
-    android:layout_weight="48">
+    android:layout_weight="45">
     <Button
         android:background="#00000000"
         android:id="@+id/backBtn"
@@ -26,7 +26,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="52">
+        android:layout_weight="55">
 
         <FrameLayout
             android:layout_width="match_parent"

@@ -19,9 +19,9 @@ public class movieActivity extends AppCompatActivity {
         Intent intent;
         intent = new Intent(this,contextActivity.class);
         switch (v.getId()){
-            case R.id.backBtn:
 
-                finish();
+            case R.id.backBtn:
+                intent = new Intent(this,MainActivity.class);
                 break;
             case R.id.item1:
                 intent.putExtra("context",R.drawable.a1);
@@ -41,6 +41,7 @@ public class movieActivity extends AppCompatActivity {
             case R.id.item6:
                 intent.putExtra("context",R.drawable.a6);
                 break;
+
         }
         startActivity(intent);
     }

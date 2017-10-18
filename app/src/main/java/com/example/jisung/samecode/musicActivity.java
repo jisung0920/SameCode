@@ -20,8 +20,7 @@ public class musicActivity extends AppCompatActivity {
         intent = new Intent(this,contextActivity.class);
         switch (v.getId()){
             case R.id.backBtn:
-
-                finish();
+                intent = new Intent(this,MainActivity.class);
                 break;
             case R.id.item1:
                 intent.putExtra("context",R.drawable.m1);
@@ -41,6 +40,7 @@ public class musicActivity extends AppCompatActivity {
             case R.id.item6:
                 intent.putExtra("context",R.drawable.m6);
                 break;
+
         }
         startActivity(intent);
     }

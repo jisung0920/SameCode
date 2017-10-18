@@ -20,7 +20,7 @@ public class travelActivity extends AppCompatActivity {
         intent = new Intent(this,contextActivity.class);
         switch (v.getId()){
             case R.id.backBtn:
-                finish();
+                intent = new Intent(this,MainActivity.class);
                 break;
             case R.id.item1:
                 intent.putExtra("context",R.drawable.t1);
@@ -34,7 +34,9 @@ public class travelActivity extends AppCompatActivity {
             case R.id.item4:
                 intent.putExtra("context",R.drawable.t4);
                 break;
-
+            case R.id.back:
+                intent = new Intent(this,MainActivity.class);
+                break;
         }
         startActivity(intent);
     }

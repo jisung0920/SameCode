@@ -20,7 +20,7 @@ public class bookActivity extends AppCompatActivity {
         intent = new Intent(this,contextActivity.class);
         switch (v.getId()){
             case R.id.backBtn:
-                finish();
+                intent = new Intent(this,MainActivity.class);
                 break;
             case R.id.item1:
                 intent.putExtra("context",R.drawable.b1);
